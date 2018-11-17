@@ -1,0 +1,439 @@
+body {
+	font-family: Roboto;
+}
+
+.main-header {
+	background-color: #eeeeee;
+}
+
+.container {
+	width: 1160px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+}
+
+.main-navigation {
+	float: left;
+	margin-left: 200px;
+	text-transform: uppercase;
+}
+
+.basket-block {
+	float: right;
+	
+	
+}
+
+.basket {
+	padding: 25px 20px;
+	display: block;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+	text-transform: uppercase; 
+	text-decoration: none;
+	position: relative;
+	color: #000;
+
+}
+
+.basket:before {
+	content: "";
+	width: 18px;
+	height: 18px;
+	background: #ff0000;
+	position: absolute;
+	top: 33px;
+	left: -10px;
+	background: url("cart-icon.png") no-repeat; 
+}
+
+.main-navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+}
+
+.main-navigation li {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.main-navigation a {
+	color: #000;
+	text-decoration: none;
+	padding: 25px 20px;
+	display: block;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+p {
+	color: #283136;
+}
+
+.slider {
+	position: relative;
+	width: 1160px;
+	height: 435px;
+	margin: 0 auto;
+
+
+}
+.slider-controls {
+	position: absolute;
+	bottom: 95px;
+	left: 50%;
+	width: 200px;
+	height: 10px;
+	margin-left: -100px;
+	text-align: center;
+	z-index: 1000;
+
+
+}
+
+.slider-controls i {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	border: 3px solid white;
+	background: white;
+	margin: 0 3px;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.slider-controls .active {
+	background: #c1c1c1;
+}
+
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.slide-text {
+	width: 380px;
+	padding: 30px 0;
+	color: #283136;
+}
+
+.slide-title {
+	font-size: 36px;
+	line-height: 1;
+	font-weight: bold;
+	color: black;
+}
+
+.slide .btn {
+	display: block;
+	width: 240px;
+	padding: 10px 0;
+	margin-top: 25px;
+	font-size: 12px;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	background: #fb565a;
+	border-radius: 3px;
+}
+
+.slide:nth-child(1) {
+	background-image: url("slide1.png");
+	background-repeat: no-repeat;
+	background-position: 100% 10px;
+}
+
+.slide {
+	display: none;
+}
+
+.slide:nth-child(1) {
+	display: block;
+}
+
+.slide:nth-child(2) {
+	background-image: url("slide2.png");
+	background-repeat: no-repeat;
+	background-position: 100% 10px;
+}
+
+.slide:nth-child(3) {
+	background-image: url("slide3.png");
+	background-repeat: no-repeat;
+	background-position: 100% 10px;
+}
+
+.features {
+	margin-top: 80px;
+	width: 1120px;
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+.features-item {
+	display: inline-block;
+	
+}
+
+.features-item:nth-child(2) {
+	margin-left: 100px;
+}
+
+.features-item:nth-child(3) {
+	margin-left: 100px;
+}
+
+.btn-features {
+	width: 160px;
+	height: 20px;
+	margin-top: 40px;
+	color: white;
+	display: block;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	padding: 15px 0;
+}
+
+.btn-color1 {
+	background-color: #fb565a;
+}
+
+.btn-color2 {
+	background-color: #00ca74;
+}
+
+.btn-color3 {
+	background-color: #efc84a;
+}
+
+.divider {
+	 background-color: #eeeeee;
+	 height: 2px;
+	 border:0px none;
+	 margin-top: 80px;
+}
+
+.about {
+	margin-top: 70px;
+}
+
+.about-text {
+	width: 660px;
+	float: left;
+}
+
+.title {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.title2 {
+	font-size: 16px;
+	line-height: 24px;
+	display: block;
+	margin-top: 30px;
+}
+
+.products {
+
+	list-style-image: url(Layer-23-copy-3.png);
+}
+
+.about-text-text {
+	margin-top: 30px;
+}
+
+.products li {
+	padding: 15px 0;
+}
+
+.about-else {
+	float: right;
+	width: 380px;
+}
+
+.slogan {
+	font-size: 16px;
+	line-height: 24px;
+	padding: 10px 0;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.info {
+	display: inline-block;
+	margin-top: 40px;
+	margin-left: 10px;
+}
+
+.percent {
+	font-size: 40px;
+	line-height: 10px;
+	font-weight: bold;
+
+}
+
+.text {
+	color: #283136;
+}
+
+.partner-logo {
+	float: left;
+}
+
+.partner-logo-img {
+	opacity: 0.2;
+}
+
+.partner-logo-img:hover {
+	opacity: 1;
+}
+
+.partner-logo-img:active {
+	opacity: 0.1;
+}
+
+.partner-logo-1 {
+	margin-left: 52px;
+	margin-top: 62px;
+	margin-bottom: 50px;
+}
+
+.partner-logo-2 {
+	margin-left: 96px;
+	margin-top: 46px;
+	margin-bottom: 44px;
+}
+
+.partner-logo-3 {
+	margin-left: 103px;
+	margin-top: 65px;
+	margin-bottom: 63px;
+}
+
+.partner-logo-4 {
+	margin-left: 121px;
+	margin-top: 52px;
+	margin-bottom: 44px;
+}
+
+.map {
+	background-image: url("Map.jpg");
+	width: 1440px;
+	height: 420px;
+	margin: 0 auto;
+	margin-top: 80px;
+	border: 1px solid white;
+	position: relative;
+}
+
+.contacts {
+	background-color: white;
+	width: 320px;
+	height: 310px; 
+	font-size: 16px;
+	line-height: 18px;
+	color: #666666;
+	margin-top: 50px;
+	border: 1px solid white;
+}
+
+.nerds-title {
+	font-weight: bold;
+	line-height: 30px;
+	font-size: 18px;
+}
+
+.contacts p {
+	margin-left: 50px;
+	margin-top: 30px; 
+}
+
+.contact-us {
+	width: 220px;
+	height: 50px;
+	background-color: #fb565a;
+	text-decoration: none;display: block;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 25px 0px 0px 0px; 
+	margin-top: 40px;
+	margin-left: 50px;
+
+}
+
+.map-marker {
+	position: absolute;
+	top: 95px;
+	right: 390px;
+
+}
+
+.social-btn {
+	background-color: #e1e1e1;
+	width: 70px;
+	height: 70px;
+	float: left;
+	border-radius: 50px;
+	text-align: center;
+	margin-left: 10px;
+	margin-top: 70px;
+
+}
+
+.social-btn img {
+	margin-top: 25px;
+}
+
+.social-btn:hover {
+	background-color: #e74246 ;
+}
+
+.social-btn:active {
+	background-color: #d7373b;
+}
+
+.social-text {
+	float: right;
+	margin-top: 70px;
+	margin-right: 200px;
+}
+
+.lets-friend {
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: bold;
+}
+
+.sale {
+	color: #444444;
+	font-size: 16px;
+	line-height: 22px;
+
+}
