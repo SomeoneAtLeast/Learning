@@ -1,0 +1,451 @@
+﻿body {
+	margin: 0;
+	font-family: sans-serif;
+	overflow: scroll;
+}
+
+a {
+	text-decoration: none;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip: rect(0 0 0 0);
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+}
+
+.main-header-background-container {
+	background: #273a64;
+}
+
+.main-header-container {
+	width: 1320px;
+	margin: 0 auto;
+}
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main-header .main-navigation {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.main-header .navigation-item {
+	padding: 6px 5px;
+	margin: 0 6px;
+}
+
+.main-header .navigation-item:last-child {
+	margin-right: 0;
+	padding-right: 0;
+}
+
+.main-header .navigation-item:first-child {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.main-header .navigation-item-link {
+	color: #fff;
+	font-size: 14px;
+}
+
+.main-header .disabled {
+	cursor: default;
+	pointer-events: none;
+	opacity: 0.3;
+}
+
+.main-header .geo {
+	padding: 6px 0;	
+}
+
+.main-header .geo-link {
+	color: #fff;
+	font-size: 14px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.main-header .geo-icon {
+	position: absolute;
+	left: -10px;
+}
+
+.main-header .navigation-item:hover .navigation-item-link,
+.main-header .geo-link:hover .geo-link-text{
+	opacity: 0.3;
+	transition: 0.3s;
+}
+
+.extra-header-background-container {
+	background: #fff;
+}
+
+.extra-header-container {
+	width: 1320px;
+	margin: 0 auto;
+}
+
+.extra-header {
+	padding-top: 10px;
+	display: flex;
+	align-items: flex-end;
+	position: relative;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.extra-header .bonus-office-exit-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.extra-header .bonus,
+.extra-header .sales-office,
+.extra-header .exit,
+.extra-header .cabinet {
+	color: black;
+	font-size: 14px;
+	margin-bottom: 13px;
+	padding: 0 11px;
+}
+
+.extra-header .exit {
+	border: 1px solid #c1c1c1;
+	border-radius: 5px;
+	padding: 7px 9px;
+	min-width: 60px;
+	margin-bottom: 4px;
+	margin-left: 9px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.extra-header .cabinet {
+	border: 1px solid #c1c1c1;
+	border-radius: 5px;
+	padding: 7px 9px;
+	min-width: 60px;
+	margin-bottom: 4px;
+	margin-left: 9px;
+	text-align: center;
+	cursor: pointer;
+	display: none;
+}
+
+.extra-header .features-modal {
+	position: absolute;
+	left: 975px;
+	top: 77px;
+	flex-wrap: wrap;
+	padding: 25px 10px;
+	width: 295px;
+	justify-content: space-between;
+	box-shadow: 0 0 15px 0 rgba(0,0,0,0.15);
+	width: 325px;
+	padding-bottom: 20px;
+	display: none;
+	background-color: #fff; 
+}
+
+.extra-header .modal-btn {
+	border: 0;
+	background-color: transparent;
+	position: absolute;
+	left: 301px;
+	outline: none;
+	cursor: pointer;
+	width: 25px;
+	height: 25px;
+	top: 14px;
+}
+
+.extra-header .modal-btn::after,
+.extra-header .modal-btn::before  {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 3px;
+	background-color: black;
+	top: 13px;	
+}
+
+.extra-header .modal-btn::after {
+	transform: rotate(45deg);
+}
+
+.extra-header .modal-btn::before {
+	transform: rotate(-45deg);
+}
+
+.extra-header .modal-item {
+	font-size: 14px;
+	width: 85px;
+	text-align: center;
+	color: rgba(16, 24, 40, 0.7);
+	margin: 12px 11px;
+
+}
+
+.extra-header .modal-title {
+	width: 100%;
+	font-size: 14px;
+	color: #101828;
+	margin-bottom: 11px;
+	margin-left: 30px;
+}
+
+.extra-header .my-account::before,
+.extra-header .smart-home::before,
+.extra-header .wink::before,
+.extra-header .rostelecom-lyceum::before,
+.extra-header .bonus-program::before,
+.extra-header .rights-and-benefits::before {
+	content: "";
+	display: block;
+	width: 55px;
+	height: 55px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: 0 auto 5px auto;
+}
+
+.extra-header .my-account::before {
+	background-image: url(../img/elk.svg);
+}
+
+.extra-header .smart-home::before {
+	background-image: url(../img/smarthome.svg);
+}
+
+.extra-header .wink::before {
+	background-image: url(../img/wink.svg);
+}
+
+.extra-header .rostelecom-lyceum::before {
+	background-image: url(../img/rostelecom-lyceum.svg);
+}
+
+.extra-header .bonus-program::before {
+	background-image: url(../img/bonus.svg);
+}
+
+.extra-header .rights-and-benefits::before {
+	background-image: url(../img/rights-and-benefits.svg);
+}
+
+.extra-header input[name="modal-checkbox"]:checked ~ .features-modal {
+	display: flex;
+}
+
+.extra-header input[name="modal-checkbox"]:checked + .exit {
+	display: none;
+}
+
+.extra-header input[name="modal-checkbox"]:checked ~ .cabinet {
+	display: block;
+}
+
+.extra-header .arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 10px solid #fff;
+	border-right: 12px solid transparent;
+	border-left: 12px solid transparent;
+	left: 261px;
+	top: -10px;
+	z-index: 1000;
+}
+
+.extra-header .arrow-shadow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-bottom: 10px solid rgba(0,0,0,0.06);
+	border-right: 12px solid transparent;
+	border-left: 12px solid transparent;
+	left: 261px;
+	top: -12px;
+}
+
+.extra-header .extra-navigation {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-top: 15px;
+	margin-bottom: 9px;
+}
+
+.extra-header .extra-navigation-item {
+	padding: 6px 3px;
+	margin-left: 83px;
+
+}
+
+
+.extra-header .extra-navigation-item:last-child {
+	padding-right: 0;
+}
+
+.extra-header .extra-navigation-item:first-child {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.extra-header .extra-navigation-item-link {
+	color: #2d2d2d;
+	font-size: 18px;
+	padding-bottom: 20px;
+}
+
+.extra-header .extra-navigation-item-link:hover {
+	opacity: 0.3;
+	transition: 0.3s;
+}
+
+
+.extra-navigation-modal-background {
+	width: 1920px;
+	position: absolute;
+	height: 250px;
+	border-top: 1px solid rgba(0,0,0,.1);
+	left: -5000px;
+	top: 120px;
+
+}
+
+.extra-navigation-item:hover .extra-navigation-modal-background {
+	left: -300px;
+	transition: 0.5s;
+}
+
+.extra-navigation-modal-background .extra-navigation-extended-menu {
+	width: 1320px;
+	margin: 0 auto;
+	display: flex;
+}
+
+.extra-navigation-extended-menu .column-main-text {
+	font-size: 32px;
+    line-height: 44px;
+    color: rgba(0,0,0,.7);
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+    margin-top: 80px;
+    margin-bottom: 3px;
+}
+
+.extra-navigation-extended-menu .column-second-text {
+	font-size: 14px;
+    line-height: 1.4;
+    color: rgba(0,0,0,.7);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.extra-navigation-extended-menu .column-btn {
+	min-width: 80px;
+	padding: 6px 15px;
+	background-color: #ff4f12;
+	border: 1px solid #ff4f12;
+	color: #fff;
+	display: inline-block;
+	border-radius: 5px;
+}
+
+.extra-navigation-extended-menu .column-btn:hover {
+	background-color: #ff622b;
+	border: 1px solid #ff622b;
+	transition: 0.3s;
+}
+
+.extra-navigation-extended-menu .column-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	height: 215px;
+}
+
+.extra-navigation-extended-menu .column-list-item {
+	margin-bottom: 25px;
+	margin-right: 150px;
+}
+
+.extra-navigation-extended-menu .column-list-item-link {
+	font-size: 16px;
+	color: #000;	
+}
+
+.extra-navigation-extended-menu .column-list-item-link:hover {
+	opacity: 0.3;
+	transition: 0.3s;	
+}
+
+.extra-navigation-extended-menu .left-column {
+	min-width: 500px;
+}
+
+.extra-navigation-extended-menu .right-column {
+	margin-left: 180px;
+	margin-top: 35px;
+}
+
+.slider {
+	min-height: 500px;
+	position: relative;
+}
+
+.slider .slider-background {
+	background: #273a64;
+	min-height: inherit;
+}
+
+.slider .slider-img-container {
+	position: absolute;
+	min-height: inherit;
+	min-width: 845px;
+	left: 50%;
+	margin-left: -80px;
+	top: 0;
+}
+
+.slider .img-container {
+	transform: skewX(-20deg);
+	min-width: 845px;
+	min-height: inherit;
+	position: absolute;
+	top: 0;
+	left: 10%;
+	/*clip: rect(auto, auto, auto, auto);*/
+	background-color: red;
+}
+
+.slider .img {
+	background-image: url(../img/slider/slider-1.png);
+	min-height: 500px;
+	width: 120%;
+	background-repeat: no-repeat;
+	background-size: 1104px 768px;
+	position: absolute;
+	transform: skewX(20deg);
+	background-position: 10px, 0;
+	top: 0;
+	right: -68px;
+}

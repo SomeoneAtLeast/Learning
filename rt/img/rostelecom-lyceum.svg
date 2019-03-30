@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>176-BIG</title>
+    <desc>Created with Sketch.</desc>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons_B2C_table" transform="translate(-906.000000, -14590.000000)">
+            <g id="176-BIG" transform="translate(906.000000, 14590.000000)">
+                <circle id="Oval" fill="#7700FF" cx="40.0701754" cy="40.0701754" r="39.7894737"></circle>
+                <g id="Group" transform="translate(21.403509, 17.543860)">
+                    <polygon id="Path" fill="#BA80FE" points="1.75438596 28.877193 1.75438596 28.1403509 28.4210526 0.105263158 28.3859649 0.245614035 26.1754386 4.21052632 18.877193 16.9824561 11.3333333 30.3859649"></polygon>
+                    <path d="M12.1403509,28.5614035 C10.9473684,26.9473684 8.98245614,25.9298246 6.77192982,25.9298246 C3.12280702,25.9298246 0.175438596,28.7719298 0.175438596,32.245614 C0.175438596,35.5789474 2.87719298,38.3157895 6.31578947,38.5263158 C6.31578947,38.5263158 6.35087719,38.5263158 6.35087719,38.5263158 C6.35087719,38.5263158 28.2807018,38.5263158 28.2807018,38.5263158 L28.4210526,0.105263158 C28.1754386,0.771929825 18.5964912,17.3684211 12.1403509,28.5614035 Z" id="Path" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
