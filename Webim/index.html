@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>
+			Webim
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="css/style-mini.css">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="main-header__container">
+				<a href="#" class="logo-link">
+					<img src="img/logo/header/logo_header.svg" class="logo-link__logo-img" width="70" height="18" alt="Webim логотип">
+				</a>
+				<nav class="main-navigation" aria-label="Меню">
+					<div class="navigation-menu">
+						<div class="navigation-menu__btn">
+							<span class="navigation-menu__line navigation-menu__line--1"></span>
+							<span class="navigation-menu__line navigation-menu__line--2"></span>
+							<span class="navigation-menu__line navigation-menu__line--3"></span>
+							<span class="navigation-menu__line navigation-menu__line--4"></span>
+							<span class="navigation-menu__line navigation-menu__line--5"></span>
+						</div>
+						<div class="navigation-menu__list-and-login nojs">
+							<ul class="navigation-menu__list">
+								<li class="navigation-menu__list-item"><a href="#" class="navigation-menu__link">Установка</a></li>
+								<li class="navigation-menu__list-item"><a href="#" class="navigation-menu__link">Возможности</a></li>
+								<li class="navigation-menu__list-item"><a href="#" class="navigation-menu__link">Стоимость</a></li>
+							</ul>
+							<div class="navigation-menu__login">
+								<a href="#" class="navigation-menu__login-btn">Регистрация</a>
+							</div>
+						</div>
+					</div>
+				</nav>
+				<div class="about-us" aria-label="О нас">
+					<div class="about-us__line">
+					</div>
+					<div class="about-us__text">
+						<h1 class="about-us__title">Сервис онлайн-консультирования</h1>
+						<span class="about-us__sub-text">чат на сайт + 10 каналов</span>
+					</div>
+				</div>
+				<div class="about-us-img" aria-label="С какими сервисами мы работаем, изображение">
+				</div>
+				<div class="about-us__main-feature-and-btn">
+					<b class="about-us__main-feature">Принимайте обращения клиентов из разных каналов в одном сервисе</b>
+					<a href="#" class="about-us__start-bnt">Начать обрабатывать заявки с Webim</a>
+				</div>
+			</div>
+		</header>
+		<main class="main-content">
+			<div class="main-content__container">
+				<section class="our-features">
+					<h2 class="our-features__title">Гибкие настройки внешнего вида<br> и взаимодействия с клиентами</h2>
+					<ul class="our-features__list">
+						<li class="our-features__item">
+							<span class="our-features__number">1</span>
+								Форма обратной связи<br> и генератор лидов</li>
+						<li class="our-features__item">
+							<span class="our-features__number">2</span>
+							Настройка дизайна кнопки</li>
+						<li class="our-features__item">
+							<span class="our-features__number">3</span>
+							Гибкая настройка активных приглашений</li>
+						<li class="our-features__item">
+							<span class="our-features__number">4</span>
+								Передача данных<br> и кликабельные ссылки<br> в собщениях</li>
+						<li class="our-features__item">
+							<span class="our-features__number">5</span>
+							Редактирование<br class="desktop-only"> и удаление отправленых сообщений</li>
+						<li class="our-features__item">
+							<span class="our-features__number">6</span>
+							Шаблоны ответов<br class="desktop-only"> и проверка орфографии</li>
+						<li class="our-features__item">
+							<span class="our-features__number">7</span>
+							Отправка эмодзи и оценка качества диалога</li>
+						<li class="our-features__item">
+							<span class="our-features__number">8</span>
+							Наблюдение за печатью сообщения посетителем</li>						
+					</ul>
+				</section>
+			</div>
+			<div class="main-content__form-container">
+				<section class="form">
+					<h2 class="form__title">Регистрация</h2>
+					<form class="form__main-tag">
+						<input class="form__input form__input--name" type="text" name="name" placeholder="Имя" aria-label="Имя">	
+						<input class="form__input form__input--tel" type="text" name="tel" placeholder="Телефон" aria-label="Телефон">
+						<input class="form__input form__input--email" type="email" name="email" placeholder="Email" aria-label="Email">
+						<input class="form__input form__input--password" type="text" name="password" placeholder="Пароль" aria-label="Пароль">
+						<input class="form__input form__input--site" type="text" name="site" placeholder="Сайт" aria-label="Сайт">
+						<div class="form__consent">
+							<input type="checkbox" class="form__checkbox" name="consent-checkbox" id="consent-checkbox" checked>
+							<label class="form__checkbox-visual" for="consent-checkbox">
+								<i class="fa fa-check" aria-hidden="true"></i>
+							</label>
+							<p class="form__consent-text">
+								Регистрируясь в системе,<br class="mobile-only">
+								я принимаю условия 
+								<a href="#" class="form__consent-link">Лицензионного cоглашения</a>,<a href="#" class="form__consent-link">
+								Политики конфиденциальности</a>  
+								и даю Согласие <a href="#" class="form__consent-link">на обработку 
+								персональных данных</a>. 
+							</p>
+						</div>
+						<button class="form__reg-btn">Зарегистрироваться</button>
+					</form>
+				</section>
+			</div>
+		</main>
+		<footer class="main-footer">
+			<div class="main-footer__container">
+				<p class="main-footer__copyright">© Webim, 2019</p>
+				<a href="#" class="main-footer__privacy-policy">Политика конфиденциальности</a>
+			</div>
+		</footer>
+		<script src="js/script-mini.js" async></script>
+		<script src="https://use.fontawesome.com/1e98884959.js" async></script>
+	</body>
+</html>
